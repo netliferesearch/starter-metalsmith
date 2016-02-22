@@ -8,7 +8,7 @@ var handlebars = require('handlebars');
 
 module.exports = function() {
 
-metalsmith(__dirname)
+metalsmith('./')
     .source('src/html/content')
     .use(markdown())
     .use(layouts({
