@@ -1,0 +1,20 @@
+{
+  "name": "starter-metalsmith",
+  "version": "1.0.0",
+  "description": "Netlife Research Metalsmith starter for static site generating with Metalsmith",
+  "author": "Fredrik Jensen",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fredjens/starter.git"
+  },
+  "dependencies": {
+    "handlebars": "^4.0.5",
+    "metalsmith": "^1.0.0",
+    "metalsmith-layouts": "^1.4.1",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-permalinks": "^0.1.1",
+    "metalsmith-watch": "^1.0.1"
+  }
+}
