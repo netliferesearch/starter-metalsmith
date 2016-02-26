@@ -11,12 +11,13 @@ var metalsmith = require('starter-metalsmith');
 metalsmith.run('handlebars');`
 ```
 
-### Changing template language
-These languages are available
+### Template language
+These language engine options are available
 * [Handlebars](http://handlebarsjs.com/)
 * [Twig](http://twig.sensiolabs.org/)
 * [Jade](http://jade-lang.com/)
-It is required like this: `metalsmith.run('option')`
+
+ Require like this: `metalsmith.run('option')`
 
 ### Changing paths
 If you want to change paths for Metalsmith, you pass an object to the `extendConfig`. This config is merged into the default config and will override the override properties with the same name in the default config.
