@@ -16,8 +16,9 @@ These language engine options are available
 * [Handlebars](http://handlebarsjs.com/)
 * [Twig](http://twig.sensiolabs.org/)
 * [Jade](http://jade-lang.com/)
-
- Require like this: `metalsmith.run('option')`
+```javascript
+Require like this: `metalsmith.run('option')`
+```
 
 ### Changing paths
 If you want to change paths for Metalsmith, you pass an object to the `extendConfig`. This config is merged into the default config and will override the override properties with the same name in the default config.
