@@ -13,9 +13,9 @@ metalsmith.run('handlebars');`
 
 ### Changing template language
 These languages are available
-* (Handlebars)[http://handlebarsjs.com/]
-* (Twig)[http://twig.sensiolabs.org/] (js)
-* (Jade)[http://jade-lang.com/]
+* [Handlebars](http://handlebarsjs.com/)
+* [Twig](http://twig.sensiolabs.org/)
+* [Jade](http://jade-lang.com/)
 It is required like this: `metalsmith.run('option')`
 
 ### Changing paths
