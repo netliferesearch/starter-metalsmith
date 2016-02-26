@@ -7,25 +7,7 @@ var watch = require('metalsmith-watch');
 var handlebars = require('handlebars');
 var config = require('./config');
 
-module.exports = function() {
-    metalsmith('./')
-        .source(config.src.content)
-        .use(markdown())
-        .use(layouts({
-            engine: 'handlebars',
-            directory: config.src.layout,
-            partials: config.src.partials
-        }))
-        .destination(config.dist)
-        .use(watch({
-            paths: {
-                '${source}/**/*': '**/*',
-                'src/html/layouts/**/*': '**/*'
-            },
-            livereload: true
-        }))
-        .build(function(err) {
-          if (err) throw err;
-          console.log('Build finished!');
-        });
-}
+module.exports = {
+    run: require('./run'),
+    extendConfig: require('./extend-config')
+};
