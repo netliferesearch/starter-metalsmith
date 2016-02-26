@@ -5,6 +5,9 @@ var markdown = require('metalsmith-markdown');
 var layouts = require('metalsmith-layouts');
 var watch = require('metalsmith-watch');
 var handlebars = require('handlebars');
+var jade = require('jade');
+var twig = require('twig');
+
 var config = require('./config');
 
 module.exports = function(language) {
