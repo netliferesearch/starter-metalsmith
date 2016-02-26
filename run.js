@@ -7,12 +7,12 @@ var watch = require('metalsmith-watch');
 var handlebars = require('handlebars');
 var config = require('./config');
 
-module.exports = function() {
+module.exports = function(language) {
     metalsmith('./')
         .source(config.src.content)
         .use(markdown())
         .use(layouts({
-            engine: 'handlebars',
+            engine: language,
             directory: config.src.layout,
             partials: config.src.partials
         }))
