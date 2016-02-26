@@ -1,23 +1,35 @@
 # Metalsmith starter
 
-Netlife Research Metalsmith starter for static site generating with Metalsmith
+Netlife Research Metalsmith starter for static site generator.
 
-### This pacakge use:
+Install the package:
+`npm i starter-metalsmith`
+
+Require and run starter-metalsmith like this:
+```javascript
+var metalsmith = require('starter-metalsmith');
+metalsmith.run();`
+```
+
+### Changing paths
+If you want to change paths for Metalsmith, you pass an object to the `extendConfig`. This config is merged into the default config and will override the override properties with the same name in the default config.
+
+Change urls like this:
+```javascript
+metalsmith.extendConfig({
+    src: {
+        content: 'your/path',
+        layout: 'your/path',
+        partials: 'your/path',
+    },
+    watch: 'your/path',
+    dist: 'your/path'
+});
+```
+
+### Dependencies
 * Metalsmith
 * Metalsmith layout
     * Handlebars
 * Metalsmith markdown
 * Metalsmith watch
-
-Install the package:
-`npm i starter-metalsmith`
-
-Require it like this:
-`var metalsmith = require('starter-metalsmith');`
-
-Base url´s:
-* src > html > content (Markdown files)
-* src > html > layouts (Layout with Handlebars)
-* src > html > layouts > partials (partials)
-
-Change the url's like this:
