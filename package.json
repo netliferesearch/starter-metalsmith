@@ -7,7 +7,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/fredjens/starter.git"
+    "url": "git://github.com/netliferesearch/starter-metalsmith.git"
   },
   "dependencies": {
     "handlebars": "^4.0.5",
