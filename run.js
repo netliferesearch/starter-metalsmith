@@ -8,7 +8,6 @@ var watch = require('metalsmith-watch');
 var handlebars = require('handlebars');
 var jade = require('jade');
 var twig = require('twig');
-var partial = require('metalsmith-partial');
 
 var config = require('./config');
 
@@ -21,12 +20,9 @@ module.exports = function(language) {
             directory: config.src.layout,
             partials: config.src.partials
         }))
-        .use(partial({
-            directory: config.src.partials,
-            engine: language
-        }))
         .use(inplace({
-            engine: language
+            engine: language,
+            partials:  config.src.partials
         }))
         .destination(config.dist)
         .use(watch({
