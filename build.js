@@ -1,5 +1,7 @@
 'use strict';
 
+// NOT IN USE
+
 var metalsmith = require('metalsmith');
 var markdown = require('metalsmith-markdown');
 var layouts = require('metalsmith-layouts');
